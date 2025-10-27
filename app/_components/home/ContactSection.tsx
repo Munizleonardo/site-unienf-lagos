@@ -3,7 +3,6 @@ import { Button } from "@/app/_components/ui/button";
 import { MapPin, Phone, Mail, Instagram } from "lucide-react";
 
 export default function ContactSection() {
-    
   const whatsappNumber = "552226211627"; // WhatsApp da UNIENF
   const instagramHandle = "unienflagos";
 
@@ -32,7 +31,7 @@ export default function ContactSection() {
           <div className="space-y-6 animate-slide-in">
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 flex items-start gap-4">
-                <MapPin className="text-accent flex-shrink-0 mt-1" size={24} />
+                <MapPin className="flex-shrink-0 mt-1" size={24} />
                 <div>
                   <h3 className="font-semibold text-primary mb-1">Endereço</h3>
                   <p className="text-muted-foreground">
@@ -46,7 +45,7 @@ export default function ContactSection() {
 
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 flex items-start gap-4">
-                <Phone className="text-accent flex-shrink-0 mt-1" size={24} />
+                <Phone className="flex-shrink-0 mt-1" size={24} />
                 <div>
                   <h3 className="font-semibold text-primary mb-1">Telefone</h3>
                   <p className="text-muted-foreground">(22) 2621-1627</p>
@@ -56,7 +55,7 @@ export default function ContactSection() {
 
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 flex items-start gap-4">
-                <Mail className="text-accent flex-shrink-0 mt-1" size={24} />
+                <Mail className=" flex-shrink-0 mt-1" size={24} />
                 <div>
                   <h3 className="font-semibold text-primary mb-1">Email</h3>
                   <p className="text-muted-foreground">contato@unienf.com.br</p>
@@ -89,7 +88,7 @@ export default function ContactSection() {
           {/* Map */}
           <div className="animate-fade-in">
             <Card className="h-full overflow-hidden">
-              <CardContent className="p-0 h-full min-h-[400px]">
+              <CardContent className="p-1 h-full min-h-[400px]">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.1763739633593!2d-42.10735852469177!3d-22.832963279307094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x970fb97cc65167%3A0xfaad73cbd70fe859!2sUNIENF%20Lagos!5e0!3m2!1spt-BR!2sbr!4v1761145269171!5m2!1spt-BR!2sbr"
                   width="100%"

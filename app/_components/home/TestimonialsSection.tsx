@@ -39,8 +39,7 @@ export default function TestimonialsSection() {
               className="relative bg-card hover:shadow-xl transition-all duration-300 animate-slide-in"
               style={{ animationDelay: `${index * 0.15}s` }}
             >
-              <CardContent className="p-8">
-                <Quote className="text-accent mb-4 opacity-20" size={48} />
+              <CardContent className="p-10">
                 <p className="text-foreground/90 mb-6 italic leading-relaxed">
                   {testimonial.text}
                 </p>

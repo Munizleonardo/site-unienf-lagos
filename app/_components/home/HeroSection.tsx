@@ -1,5 +1,6 @@
 import { Button } from "@/app/_components/ui/button";
-import Image from "next/image";
+import heroImage from "@/public/hero-nursing.jpg";
+import Image from "next/image"
 
 export default function HeroSection() {
   const scrollToSection = (id: string) => {
@@ -14,11 +15,9 @@ export default function HeroSection() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <Image
-          src="/hero-nursing.jpg"
+          src={heroImage}
           alt="Estudantes de enfermagem UNIENF"
           className="w-full h-full object-cover"
-          width={100}
-          height={100}
         />
         <div
           className="absolute inset-0"
@@ -48,6 +47,7 @@ export default function HeroSection() {
                 carreira de sucesso na área da saúde.
               </p>
               <Button
+                
                 size="lg"
                 onClick={() => scrollToSection("courses")}
               >

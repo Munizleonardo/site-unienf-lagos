@@ -46,8 +46,7 @@ export default function Header() {
         <div
           className={`text-2xl font-bold transition-colors duration-300 ${
             isScrolled ? "text-primary" : "text-white"
-          }`}
-        >
+          }`}>
           UNIENF
         </div>
 
@@ -57,7 +56,7 @@ export default function Header() {
             <li key={item.id}>
               <button
                 onClick={() => scrollToSection(item.id)}
-                className={`transition-colors duration-300 hover:text-accent font-medium ${
+                className={`cursor-pointer transition-colors duration-300 hover:text-accent font-medium ${
                   isScrolled ? "text-foreground" : "text-white"
                 }`}
               >
@@ -70,8 +69,7 @@ export default function Header() {
         {/* CTA Button */}
         <div className="hidden md:block">
           <Button
-            onClick={() => scrollToSection("contact")}
-          >
+            onClick={() => scrollToSection("contact")}>
             Inscreva-se
           </Button>
         </div>
@@ -89,16 +87,16 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-background shadow-lg">
+        <div className="bg-background md:hidden shadow-lg text-center ">
           <ul className="flex flex-col py-4">
             {navItems.map((item) => (
               <li key={item.id}>
-                <button
+                <Button
                   onClick={() => scrollToSection(item.id)}
-                  className="w-full text-left px-8 py-3 text-foreground hover:bg-secondary transition-colors"
+                  className="w-50 mx-auto mb-3 px-8 py-3 hover:bg-secondary transition-colors"
                 >
                   {item.label}
-                </button>
+                </Button>
               </li>
             ))}
             <li className="px-8 pt-4">

@@ -1,23 +1,25 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/app/_components/ui/card";
 import { Button } from "@/app/_components/ui/button";
-import Image from "next/image";
+import courseTechnical from "@/public/course-technical.jpg";
+import courseSurgical from "@/public/course-surgical.jpg";
+import Image from "next/image"
 
 const courses = [
   {
     title: "Técnico em Enfermagem",
     description:
       "Formação completa para atuar em hospitais, clínicas e unidades de saúde. Aprenda procedimentos técnicos, cuidados ao paciente e gestão hospitalar.",
-    image: "/course-technical.jpg",
+    image: courseTechnical,
   },
   {
     title: "Instrumentação Cirúrgica",
     description:
       "Especialização em procedimentos cirúrgicos, esterilização de materiais e assistência em centro cirúrgico. Prepare-se para atuar em cirurgias de alta complexidade.",
-    image: "/course-technical.jpg",
+    image: courseSurgical,
   },
 ];
 
-export default function CoursesSection () {
+export default function CoursesSection() {
   return (
     <section id="courses" className="section-padding bg-gradient-to-b from-background to-secondary/20">
       <div className="container-custom">
@@ -39,11 +41,9 @@ export default function CoursesSection () {
             >
               <div className="h-64 overflow-hidden">
                 <Image
-                  src="/course-technical.jpg"
+                  src={course.image}
                   alt={course.title}
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                  width={100}
-            height={100}
                 />
               </div>
               <CardHeader>

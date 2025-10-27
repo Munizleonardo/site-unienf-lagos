@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/app/_components/ui/card";
 import eventImage from "@/public/event1.png";
 import eventImage2 from "@/public/event2.png";
 import eventImage3 from "@/public/event3.png";
-import { Calendar } from "@/app/_components/ui/calendar";
+import { Calendar } from "lucide-react";
 import Image from "next/image";
 
 const events = [
@@ -48,16 +48,14 @@ export default function EventsSection() {
             >
               <div className="h-56 overflow-hidden">
                 <Image
-                  src="/event1.png"
-                  alt={event?.title || "Evento"}
+                  src={event.image}
+                  alt={event.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  width={50}
-                  height={50}
                 />
               </div>
               <CardContent className="p-6">
-                <div className="flex items-center gap-2 text-accent mb-3">
-                  <Calendar /> 
+                <div className="flex items-center gap-2 text-bold mb-3">
+                  <Calendar size={18} />
                   <span className="text-sm font-medium">{event.date}</span>
                 </div>
                 <h3 className="text-xl font-semibold text-primary mb-2">
@@ -68,7 +66,9 @@ export default function EventsSection() {
             </Card>
           ))}
         </div>
+        <div> 
+      </div>    
       </div>
     </section>
-  );
+    )
 };

@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/app/_components/ui/card";
 import professor1 from "@/public/professor1.png";
 import professor2 from "@/public/professor2.png";
-import Image from "next/image";
+import Image from "next/image"
 
 const faculty = [
   {
@@ -39,11 +39,9 @@ export default function FacultySection() {
               <CardContent className="p-8">
                 <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-accent shadow-lg">
                   <Image
-                    src="/professor1.png"
+                    src={prof.image}
                     alt={prof.name}
                     className="w-full h-full object-cover"
-                    width={50}
-                    height={50}
                   />
                 </div>
                 <h3 className="text-2xl font-semibold text-primary mb-2">
@@ -58,4 +56,3 @@ export default function FacultySection() {
     </section>
   );
 };
-
