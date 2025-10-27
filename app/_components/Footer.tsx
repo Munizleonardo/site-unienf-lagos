@@ -1,3 +1,4 @@
+"use client"
 import { Instagram, Phone, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {

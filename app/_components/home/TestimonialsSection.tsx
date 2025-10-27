@@ -1,5 +1,4 @@
 import { Card, CardContent } from "@/app/_components/ui/card";
-import { Quote } from "lucide-react";
 
 const testimonials = [
   {
