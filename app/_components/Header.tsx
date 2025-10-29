@@ -99,15 +99,15 @@ export default function Header() {
                 </Button>
               </li>
             ))}
-            <li className="px-8 pt-4">
+            <div className="px-8 pt-4">
               <Button
                 variant="default"
-                className="w-full"
+                className="w-[80%]"
                 onClick={() => scrollToSection("contact")}
               >
                 Inscreva-se
               </Button>
-            </li>
+            </div>
           </ul>
         </div>
       )}

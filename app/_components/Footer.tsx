@@ -5,6 +5,7 @@ export default function Footer() {
     
   const whatsappNumber = "552226211627";
   const instagramHandle = "unienflagos";
+  const year = new Date().getFullYear();
 
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -65,7 +66,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center text-primary-foreground/70">
-          <p>© 2025 UNIENF. Todos os direitos reservados.</p>
+          <p>© {year} UNIENF. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
